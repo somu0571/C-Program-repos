@@ -1,46 +1,46 @@
 #include <stdio.h>
 
-int findSum(int arr[], int n)
+int arr_sum(int arr[], int n)
 {
-    int i, sum = 0;
-    for (i = 0; i < n; i++)
+    int sum = 0;
+    for (int i = 0; i < n; i++)
         sum += arr[i];
     return sum;
 }
 
-int findMin(int arr[], int n)
+int arr_min(int arr[], int n)
 {
-    int i, min = arr[0];
-    for (i = 1; i < n; i++)
+    int min = arr[0];
+    for (int i = 1; i < n; i++)
         if (arr[i] < min)
             min = arr[i];
     return min;
 }
 
-int findMax(int arr[], int n)
+int arr_max(int arr[], int n)
 {
-    int i, max = arr[0];
-    for (i = 1; i < n; i++)
+    int max = arr[0];
+    for (int i = 1; i < n; i++)
         if (arr[i] > max)
             max = arr[i];
     return max;
 }
 
-int findAvg(int arr[], int n)
+int arr_avg(int arr[], int n)
 {
-    int sum = findSum(arr, n);
-    return sum / n;   // integer average
+    int sum = arr_sum(arr, n);
+    return sum / n;   
 }
 
 int main()
 {
-    int arr[100], n, i, choice, result;
+    int arr[100], n, choice, result;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
     printf("Enter %d elements:\n", n);
-    for (i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
         scanf("%d", &arr[i]);
 
     printf("1. Sum \n");
@@ -53,22 +53,22 @@ int main()
     switch (choice)
     {
         case 1:
-            result = findSum(arr, n);
+            result = arr_sum(arr, n);
             printf("Sum = %d", result);
             break;
 
         case 2:
-            result = findMin(arr, n);
+            result = arr_min(arr, n);
             printf("Minimum = %d", result);
             break;
 
         case 3:
-            result = findMax(arr, n);
+            result = arr_max(arr, n);
             printf("Maximum = %d", result);
             break;
 
         case 4:
-            result = findAvg(arr, n);
+            result = arr_avg(arr, n);
             printf("Average = %d", result);
             break;
 
@@ -78,5 +78,6 @@ int main()
 
     return 0;
 }
+
 
 

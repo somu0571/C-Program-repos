@@ -43,12 +43,11 @@ int main()
     for (i = 0; i < n; i++)
         scanf("%d", &arr[i]);
 
-    printf("\nMENU");
-    printf("\n1. Sum");
-    printf("\n2. Minimum");
-    printf("\n3. Maximum");
-    printf("\n4. Average");
-    printf("\nEnter your choice: ");
+    printf("1. Sum \n");
+    printf("2. Minimum \n");
+    printf("3. Maximum \n");
+    printf("4. Average \n");
+    printf("Enter your choice: ");
     scanf("%d", &choice);
 
     switch (choice)
@@ -79,4 +78,5 @@ int main()
 
     return 0;
 }
+
 

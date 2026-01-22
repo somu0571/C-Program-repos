@@ -1,30 +1,30 @@
 // Code using strlen()
 
-// #include <stdio.h>
-// #include <string.h>
+#include <stdio.h>
+#include <string.h>
 
-// int main() {
-//     char str[50] = "Somsubhra";
-//     printf("Length of string = %lu", strlen(str));
+int main() {
+    char str[50] = "Somsubhra";
+    printf("Length of string = %lu", strlen(str));
 
-//     return 0;
-// }
+    return 0;
+}
 
 //Code using strcpy()
 
-// #include<stdio.h>
-// #include<string.h>
+#include<stdio.h>
+#include<string.h>
 
-// int main() {
-//     char s1[50] = "Pokemon";
-//     char s2[50];
+int main() {
+    char s1[50] = "Pokemon";
+    char s2[50];
 
-//     strcpy(s2,s1);
-//     printf("Copied string is : %s",s2);
+    strcpy(s2,s1);
+    printf("Copied string is : %s",s2);
 
-//     return 0;
+    return 0;
 
-// }
+}
 
 // Code using strcat
 #include<stdio.h>
@@ -42,61 +42,62 @@ int main() {
 }
 
 // Code using strcmp
-// #include<stdio.h>
-// #include<string.h>
+#include<stdio.h>
+#include<string.h>
 
-// int main() {
-//     char j[] = "pink";
-//     char p[] = "blue";
+int main() {
+    char j[] = "pink";
+    char p[] = "blue";
 
-//     if(strcmp(j,p) == 0) {
-//         printf("Equal");
-//     } else {
-//         printf("Not Equal");
-//     }
+    if(strcmp(j,p) == 0) {
+        printf("Equal");
+    } else {
+        printf("Not Equal");
+    }
 
-//     return 0;
-// }
+    return 0;
+}
 
 // Code using strrev
-// #include <stdio.h>
-// #include <string.h>
+#include <stdio.h>
+#include <string.h>
 
-// int main() {
-//     char str[50] = "Computer";
+int main() {
+    char str[50] = "Computer";
 
-//     printf("Reverse = %s", strrev(str));
+    printf("Reverse = %s", strrev(str));
 
-//     return 0;
-// }
+    return 0;
+}
 
-// // Code for strupr
-// #include <stdio.h>
-// #include <string.h>
+//  Code for strupr
+#include <stdio.h>
+#include <string.h>
 
-// int main() {
-//     char str[50] = "programming";
+int main() {
+    char str[50] = "programming";
 
-//     printf("Uppercase = %s", strupr(str));
+    printf("Uppercase = %s", strupr(str));
 
-//     return 0;
-// }
+    return 0;
+}
 
 // Code using strstr()
 
-// #include <stdio.h>
-// #include <string.h>
+#include <stdio.h>
+#include <string.h>
 
-// int main() {
-//     char str[] = "This is C programming";
-//     char sub[] = "C";
+int main() {
+    char str[] = "This is C programming";
+    char sub[] = "C";
 
-//     if (strstr(str, sub))
-//         printf("Substring found");
-//     else
-//         printf("Substring not found");
+    if (strstr(str, sub))
+        printf("Substring found");
+    else
+        printf("Substring not found");
 
-//     return 0;
-// }
+    return 0;
+}
+
 
 
